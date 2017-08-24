@@ -1,13 +1,277 @@
 body {
-    font: bold 18px/27px "PT Sans Narrow", sans-serif;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 14px; 
+    font-weight: 700;
+    line-height: 18px;
     text-transform: uppercase;
     color: #000000;
 }
 .page-title {
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 30px;
+    line-height: 42px;
 }
 .title {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.text-white {
+    color: #ffffff;
+}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.main-header {
+    background-color: #000000;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+    background-color: #242424;
+}
+
+.site-navigation,
+.user-navigation {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/* Страница каталога */
+
+.inner-page {
+    color: #000000;
+    background-color: #f5f2ef;
+    background-image: url("../img/background.jpg");
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    text-decoration: underline;
+}
+
+.breadcrumbs-current {
+    color: #aba9a7;
+}
+
+.button {
+    color: #ffffff;
+    background-color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #663d15;
+}
+
+.filters fieldset {
+    border: none;
+}
+
+.item-groups,
+.brands {
+    list-style: none;
+    line-height: 18px;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+    color: #663d15;
+}
+
+.filter-input:disabled + label {
+    color: #000000;
+    opacity: 0.5;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.item-link {  
+    text-transform: none;
+}
+
+.catalog-list .item-link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.catalog-item {
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+.catalog-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+.price {
+    background-color: #e5e5e5;
+    text-align: center;
+}
+
+.catalog-list .buy {
+    text-decoration: none;
+    text-align: center;
+}
+
+.catalog-list .item-link:hover,
+.catalog-list .item-link:focus {
+    text-decoration: underline;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.pagination-list a {
+    text-decoration: none;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+    background-color: #663d15;
+}
+
+.pagination-item-current a{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.main-footer {
+    color: #ffffff;
+    background-color: #212121;
+    background-image: url("../img/footer-background.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+  }
+  
+.footer-contacts a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+  
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+    text-decoration: none;
+}
+  
+.footer-social {
+    text-align: center;
+}
+  
+.footer-social ul {
+    list-style: none;
+}
+  
+.social-button {
+    color: #ffffff;
+}
+  
+.footer-copyright {
+    text-align: center;
+}
+  
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+    color: #000000;
+  
+    background-color: #ffffff;
+}
+  
+.modal {
+    color: #000000;
+    background-color: #f8f3f0;
+    background-image: url("../img/background.jpg");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+  
+.modal h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+  
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+}
+  
+.login-form input:focus {
+    border-color: #663d15;
+}
+  
+.login-checkbox:hover,
+.login-checkbox:focus {
+    color: #663d15;
+}
+  
+.restore {
+    color: #000000;
+    text-decoration: underline;
+}
+  
+.restore:hover,
+.restore:focus {
+    text-decoration: none;
+}
+
+/* Страница карточки товара */
+
+.image-list {
+    list-style: none;
+}
+
+.preview-full {
+    box-shadow: 0 0 10px rgba(0, 1, 1, 0.2);
+}
+
+.preview-small {
+    box-shadow: 0 0 10px rgba(0, 1, 1, 0.2);
+}
+
+.product-article {
+    text-align: right;
+    color: #aeaeae;
+}
+
+.set-list {
+    list-style: none;
 }
